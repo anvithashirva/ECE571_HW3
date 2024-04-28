@@ -1,0 +1,154 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.3_1 2021.08, Aug 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/u/anvithas/ECE571-2024/ECE571_HW3/addsub
+T_opt
+!s110 1714348627
+VEzMWBdVzgKYjoffHIGkKB1
+Z2 04 3 4 work top fast 0
+=1-5254006cf05e-662ee252-df02f-5817
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.3_1;73
+T_opt1
+!s110 1714348554
+Vda3[L17WZ`Wz1OTjR[:_Z3
+R2
+=1-5254006cf05e-662ee20a-12591-534d
+R3
+o-quiet -auto_acc_if_foreign -work work +acc
+R4
+n@_opt1
+R5
+R1
+vAddSub8Bit
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z7 !s110 1714348616
+!i10b 1
+!s100 ]RRAW9SY=Boi[D4WkAR0l0
+I7D3]dg7UMC?AmMh11IYE90
+S1
+R1
+w1714348519
+8addsub.sv
+Faddsub.sv
+!i122 55
+L0 1 61
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.3_1;73
+r1
+!s85 0
+31
+Z10 !s108 1714348615.000000
+Z11 !s107 addsubtb.sv|addsub.sv|fulladder.sv|
+Z12 !s90 -source|-lint|fulladder.sv|addsub.sv|addsubtb.sv|
+!i113 0
+Z13 o-source -lint -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+n@add@sub8@bit
+vAddSub8BitGolden
+R6
+R7
+!i10b 1
+!s100 ko]=4XiiiE_ifW<aC4f]V3
+In<F78:loT2AJ7idYVf^F=0
+S1
+R1
+Z14 w1714334866
+Z15 8addsubtb.sv
+Z16 Faddsubtb.sv
+!i122 55
+L0 82 49
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@add@sub8@bit@golden
+vFullAdder
+R6
+R7
+!i10b 1
+!s100 <LV]coLGHm6_85?8]Xnl00
+IReeS;Aa>JX_^cmT@ZW8S=2
+S1
+R1
+w1714327464
+8fulladder.sv
+Ffulladder.sv
+!i122 55
+L0 1 16
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4
+n@full@adder
+vtop
+R6
+R7
+!i10b 1
+!s100 ?j>_6_FI3NS;:OV]PAhYD0
+I2[GK33K4kL[X[F:o9o1h[2
+S1
+R1
+R14
+R15
+R16
+!i122 55
+L0 1 80
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R4

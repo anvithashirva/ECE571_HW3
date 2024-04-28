@@ -1,0 +1,23 @@
+/u/anvithas/ECE571-2024/ECE571_HW3/addsub/addsub.sv {1 {vlog -work work -vopt -sv -stats=none /u/anvithas/ECE571-2024/ECE571_HW3/addsub/addsub.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module AddSub8Bit
+
+Top level modules:
+	AddSub8Bit
+
+} {} {}} /u/anvithas/ECE571-2024/ECE571_HW3/addsub/fulladder.sv {1 {vlog -work work -vopt -sv -stats=none /u/anvithas/ECE571-2024/ECE571_HW3/addsub/fulladder.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module FullAdder
+
+Top level modules:
+	FullAdder
+
+} {} {}} /u/anvithas/ECE571-2024/ECE571_HW3/addsub/addsubtb.sv {1 {vlog -work work -vopt -sv -stats=none /u/anvithas/ECE571-2024/ECE571_HW3/addsub/addsubtb.sv
+QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+-- Compiling module top
+-- Compiling module AddSub8BitGolden
+
+Top level modules:
+	top
+
+} {} {}}
