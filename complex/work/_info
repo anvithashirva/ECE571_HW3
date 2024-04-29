@@ -1,0 +1,73 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11f vlog 2021.3_1 2021.08, Aug 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/u/anvithas/ECE571-2024/ECE571_HW3/complex
+T_opt
+!s110 1714350817
+VAzLa58ajd5HCNdMg[HBjJ3
+04 3 4 work top fast 0
+=1-5254006cf05e-662eeae0-a6c4f-508c
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.3_1;73
+Xcomplexpkg
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1714348899
+!i10b 1
+!s100 m0EJbBzJJgVIQ36?>R>bE2
+Izl_Y8?[hQNN1XRd_d:c@i3
+S1
+R1
+w1714348837
+8complexpkg.sv
+Fcomplexpkg.sv
+!i122 0
+L0 1 0
+Vzl_Y8?[hQNN1XRd_d:c@i3
+Z4 OL;L;2021.3_1;73
+r1
+!s85 0
+31
+!s108 1714348899.000000
+!s107 complexpkg.sv|
+!s90 -source|-lint|complexpkg.sv|
+!i113 0
+Z5 o-source -lint -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vtop
+R3
+DXx4 work 10 complexpkg 0 22 zl_Y8?[hQNN1XRd_d:c@i3
+!s110 1714350810
+!i10b 1
+!s100 ]=AMKTN<[onJN]R]jiGDi0
+I<z1]HfkZ<8ZJ3Q;MYWzQH1
+S1
+R1
+w1714350784
+8complexm.sv
+Fcomplexm.sv
+!i122 3
+L0 1 60
+VDg1SIo80bB@j0V0VzS_@n1
+R4
+r1
+!s85 0
+31
+!s108 1714350810.000000
+!s107 complexm.sv|
+!s90 -source|-lint|complexm.sv|
+!i113 0
+R5
+R2
