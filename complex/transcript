@@ -1,5 +1,5 @@
 # vsim -c top 
-# Start time: 17:33:36 on Apr 28,2024
+# Start time: 21:44:58 on Apr 29,2024
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim-64
 # //  Version 2021.3_1 linux_x86_64 Aug 15 2021
@@ -17,32 +17,69 @@
 # //
 # Loading sv_std.std
 # Loading work.complexpkg(fast)
+# Loading work.complexm_sv_unit(fast)
 # Loading work.top(fast)
 # Create complex number A
-# r: 1.10104e+09, i: 1.10104e+09
+# r: 2567, i: 4578
 # Create complex number B
-# r: 1.10104e+09, i: 1.10104e+09
+# r: 2245, i: 4627
 # Result: Addition of complex numbers
-# r: 2.20208e+09, i: 2.20208e+09
-# Complex to components
-# r: 2.20208e+09, i: 2.20208e+09
+# r: 4812, i: 9205
+# Result of addition:components of complex number
+# r: 4812, i: 9205
 # Result: Multiplication of complex numbers
-# r: 0, i: 2.42459e+18
-# Complex to components
-# r: 0, i: 2.42459e+18
+# r: -1.54195e+07, i: 2.21551e+07
+# Result of Multiplication:components of complex numbers
+# r: -1.54195e+07, i: 2.21551e+07
 # Create complex number A
-# r: 1.1346e+09, i: 1.63792e+09
+# r: 3768, i: 4578
 # Create complex number B
-# r: 3.38274e+09, i: 1.16868e+09
+# r: 2891, i: 5614
 # Result: Addition of complex numbers
-# r: 4.51734e+09, i: 2.80659e+09
-# Complex to components
-# r: 4.51734e+09, i: 2.80659e+09
+# r: 6659, i: 10192
+# Result of addition:components of complex number
+# r: 6659, i: 10192
 # Result: Multiplication of complex numbers
-# r: 1.92386e+18, i: 6.86662e+18
-# Complex to components
-# r: 1.92386e+18, i: 6.86662e+18
-# ** Note: $finish    : complexm.sv(57)
-#    Time: 220 ns  Iteration: 0  Instance: /top
-# End time: 17:33:41 on Apr 28,2024, Elapsed time: 0:00:05
+# r: -1.48076e+07, i: 3.43886e+07
+# Result of Multiplication:components of complex numbers
+# r: -1.48076e+07, i: 3.43886e+07
+# Create complex number A
+# r: 2237, i: 4178
+# Create complex number B
+# r: 2275, i: 4127
+# Result: Addition of complex numbers
+# r: 4512, i: 8305
+# Result of addition:components of complex number
+# r: 4512, i: 8305
+# Result: Multiplication of complex numbers
+# r: -1.21534e+07, i: 1.8737e+07
+# Result of Multiplication:components of complex numbers
+# r: -1.21534e+07, i: 1.8737e+07
+# Create complex number A
+# r: 2137, i: 4148
+# Create complex number B
+# r: 2175, i: 4157
+# Result: Addition of complex numbers
+# r: 4312, i: 8305
+# Result of addition:components of complex number
+# r: 4312, i: 8305
+# Result: Multiplication of complex numbers
+# r: -1.25953e+07, i: 1.79054e+07
+# Result of Multiplication:components of complex numbers
+# r: -1.25953e+07, i: 1.79054e+07
+# Create complex number A
+# r: 5624, i: 8976
+# Create complex number B
+# r: 4156, i: 4567
+# Result: Addition of complex numbers
+# r: 9780, i: 13543
+# Result of addition:components of complex number
+# r: 9780, i: 13543
+# Result: Multiplication of complex numbers
+# r: -1.762e+07, i: 6.29891e+07
+# Result of Multiplication:components of complex numbers
+# r: -1.762e+07, i: 6.29891e+07
+# ** Note: $finish    : complexm.sv(50)
+#    Time: 350 ns  Iteration: 0  Instance: /top
+# End time: 21:45:04 on Apr 29,2024, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 0

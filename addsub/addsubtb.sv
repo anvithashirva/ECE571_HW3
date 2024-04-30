@@ -10,6 +10,7 @@ module top;
 	wire ccnG, cczG, ccvG, cccG;
 	logic [N+4-1:0] DUTResult;
 	logic [N+4-1:0] KGMResult;
+	localparam DELAY = 10;
 	
 	AddSub8Bit #(N) DUT(result, x, y, ccn, ccz, ccv, ccc, sub);
 	AddSub8BitGolden #(N) KGM(resultG, x, y, ccnG, cczG, ccvG, cccG, sub);
@@ -30,50 +31,26 @@ module top;
 	initial 
 	begin
 		error = 0;
-		
+			
 		sub = 0;
 		repeat (2)
 		begin
-			for (int i=0;i<2**N-1;i++)
+			for (int i=0;i<2**N;i++)
 			begin
 				x = i;
-				for (int j=0;j<2**N-1;j++)
+				for (int j=0;j<2**N;j++)
 				begin
 					y = j;
-					#10;
+					#DELAY;
 					CompareResults();
-					#10;
+					#DELAY;
 				end
 			end
 		sub = ~sub;
 		end  
 		
-	
-	
-		x = '1; y = ~x; sub = 0; #10;
-		CompareResults(); #10;
-		x = '1; y = ~x; sub = 1; #10;
-		CompareResults(); #10;  
-		 
-		x = '0; y = ~x; sub = 0; #10;
-		CompareResults(); #10; 
-		x = '0; y = ~x; sub = 1;
-		CompareResults(); #10; 
-		
-		x = {N/2{2'b10}}; y = ~x; sub = 0; #10; 
-		CompareResults(); #10; 
-		
-		x = {N/2{2'b10}}; y = ~x; sub = 1; #10; 
-		CompareResults(); #10; 
-		
-		x = {N/2{2'b01}}; y = ~x; sub = 0; #10; 
-		CompareResults(); #10; 
-		
-		x = {N/2{2'b01}}; y = ~x; sub = 1; #10; 
-		CompareResults(); #10; 
-
 		if (!error)
-				$display("ALL TESTS PASSED");
+			$display("ALL TESTS PASSED");
 	$finish;
 	end
 	
@@ -86,45 +63,48 @@ module AddSub8BitGolden (result, x, y, ccn, ccz, ccv, ccc, sub);
 	output logic ccn, ccz, ccv, ccc;
 	input sub;
 
-	
-	
 	logic [N-1:0] invY;
 	logic CI;
 	
 	always @ (x,y,sub)
 	begin
-		if (sub) begin
+		if (sub)
+		begin
 			invY = ~y;
-			{ccc,result} = x + invY + 1'b1 ; end
+			{ccc,result} = x + invY + 1'b1 ; 
+		end
 		else
 			{ccc,result} = x + y ; 
+
 	
 		if (result[N-1] === 1)
 			ccn = 1;
 		else
 			ccn = 0;
 
+
 		if (result === 0)
 			ccz = '1;
 		else
 			ccz = '0;
+
 			
 		if (x[N-1] === y[N-1])
 		begin
 			if(result[N-1] !== y[N-1] && sub !== 1)
 				ccv =  '1;  
 			else 
-				ccv = '0; end
-		else if (x[N-1] !== y[N-1]) begin
+				ccv = '0; 
+		end
+		else if (x[N-1] !== y[N-1]) 
+		begin
 			if (sub===1 && ccc !== ccn)
 				ccv =  '1;  
 			else
-				ccv = '0; end		
+				ccv = '0; 
+		end		
 		else
 			ccv = '0;
 
-
-	end
-	
-	
+	end	
 endmodule

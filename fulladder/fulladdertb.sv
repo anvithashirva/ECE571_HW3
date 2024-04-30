@@ -22,7 +22,7 @@ module top;
 	initial 
 	begin
 		error = 0;
-		$monitor("A = %b, B = %b, CI = %b, S = %b, CO = %b",A,B,CI,S,CO);
+		//$monitor("A = %b, B = %b, CI = %b, S = %b, CO = %b",A,B,CI,S,CO);
 		
 		for (int i=0;i<N;i++)
 		begin

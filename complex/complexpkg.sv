@@ -5,25 +5,36 @@ shortreal Real;
 shortreal Imaginary;
 } complex;
 
-function complex AddComplex(input complex M, N);
-	AddComplex.Real = (M.Real+N.Real);
-	AddComplex.Imaginary = (M.Imaginary+N.Imaginary);
+//function to add floating point complex numbers
+function automatic complex AddComplex(input complex M, N);
+	complex AddResult;
+	AddResult.Real = (M.Real+N.Real);
+	AddResult.Imaginary = (M.Imaginary+N.Imaginary);
+	return AddResult;
 endfunction
 
-function complex MultComplex(input complex M, N);
-	MultComplex.Real = ((M.Real * N.Real) - (M.Imaginary * N.Imaginary)) ;
-	MultComplex.Imaginary = (M.Real * N.Imaginary) + (M.Imaginary * N.Real) ;
+//function to multiply floatinig point complex numbers
+function automatic complex MultComplex(input complex M, N);
+	complex MultResult;
+	MultResult.Real = ((M.Real * N.Real) - (M.Imaginary * N.Imaginary)) ;
+	MultResult.Imaginary = (M.Real * N.Imaginary) + (M.Imaginary * N.Real) ;
+	return MultResult;
 endfunction
 
-function complex CreateComplex(input shortreal RealPart, ImaginaryPart);
-	CreateComplex.Real = RealPart;
-	CreateComplex.Imaginary = ImaginaryPart;
+//function to create complex numbers
+function automatic complex CreateComplex(input shortreal RealPart, ImaginaryPart);
+	complex CreateFPC;
+	CreateFPC.Real = RealPart;
+	CreateFPC.Imaginary = ImaginaryPart;
+	return CreateFPC;
 endfunction
 
+//function to print complex numbers
 function void PrintComplex(input complex C);
 	$display("r: %g, i: %g",C.Real,C.Imaginary);
 endfunction
 
+//function to return components of complex numbers
 function void ComplexToComponents(input complex C, output shortreal RealPart, ImaginaryPart);
 	RealPart = C.Real;
 	ImaginaryPart = C.Imaginary;

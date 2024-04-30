@@ -4,6 +4,14 @@ z2
 Z0 !s99 nomlopt
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.3_1 2021.08, Aug 15 2021
 13
 !s112 1.1
@@ -13,61 +21,89 @@ R0
 cModel Technology
 Z1 d/u/anvithas/ECE571-2024/ECE571_HW3/complex
 T_opt
-!s110 1714350817
-VAzLa58ajd5HCNdMg[HBjJ3
+!s110 1714452299
+V5S2g:FKV1eIfV=_4>?gaM1
 04 3 4 work top fast 0
-=1-5254006cf05e-662eeae0-a6c4f-508c
+=1-525400b63b2a-6630774b-3e785-1bfb
 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work
 Z2 tCvgOpt 0
 n@_opt
 OL;O;2021.3_1;73
-Xcomplexpkg
+Xcomplexm_sv_unit
 Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1714348899
+Z4 DXx4 work 10 complexpkg 0 22 WR386gc^i1b^E3:XS?0YH1
+Z5 !s110 1714452293
+V[`36B]_QgX:;dEcZoYR?R3
+r1
+!s85 0
 !i10b 1
-!s100 m0EJbBzJJgVIQ36?>R>bE2
-Izl_Y8?[hQNN1XRd_d:c@i3
+!s100 eVLXm`^kf=anzG_DOebkk0
+I[`36B]_QgX:;dEcZoYR?R3
+!i103 1
 S1
 R1
-w1714348837
+Z6 w1714452241
+Z7 8complexm.sv
+Z8 Fcomplexm.sv
+!i122 14
+Z9 L0 1 0
+Z10 OL;L;2021.3_1;73
+31
+Z11 !s108 1714452292.000000
+Z12 !s107 complexm.sv|complexpkg.sv|
+Z13 !s90 -source|-lint|complexpkg.sv|complexm.sv|
+!i113 0
+Z14 o-source -lint -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+Xcomplexpkg
+R3
+R5
+!i10b 1
+!s100 GP:J>EdK7eZjn]ZzX_CAz2
+IWR386gc^i1b^E3:XS?0YH1
+S1
+R1
+w1714452284
 8complexpkg.sv
 Fcomplexpkg.sv
-!i122 0
-L0 1 0
-Vzl_Y8?[hQNN1XRd_d:c@i3
-Z4 OL;L;2021.3_1;73
+!i122 14
+R9
+VWR386gc^i1b^E3:XS?0YH1
+R10
 r1
 !s85 0
 31
-!s108 1714348899.000000
-!s107 complexpkg.sv|
-!s90 -source|-lint|complexpkg.sv|
+R11
+R12
+R13
 !i113 0
-Z5 o-source -lint -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R14
 R2
 vtop
 R3
-DXx4 work 10 complexpkg 0 22 zl_Y8?[hQNN1XRd_d:c@i3
-!s110 1714350810
-!i10b 1
-!s100 ]=AMKTN<[onJN]R]jiGDi0
-I<z1]HfkZ<8ZJ3Q;MYWzQH1
-S1
-R1
-w1714350784
-8complexm.sv
-Fcomplexm.sv
-!i122 3
-L0 1 60
-VDg1SIo80bB@j0V0VzS_@n1
 R4
+DXx4 work 16 complexm_sv_unit 0 22 [`36B]_QgX:;dEcZoYR?R3
+R5
+VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
+!i10b 1
+!s100 Ci2k3^gf89ffiG8MLYMGQ2
+IOXmkd_:U[1@C6Ubz5@>j80
+!s105 complexm_sv_unit
+S1
+R1
+R6
+R7
+R8
+!i122 14
+L0 3 50
+R10
 31
-!s108 1714350810.000000
-!s107 complexm.sv|
-!s90 -source|-lint|complexm.sv|
+R11
+R12
+R13
 !i113 0
-R5
+R14
 R2

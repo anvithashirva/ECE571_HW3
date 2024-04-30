@@ -1,60 +1,52 @@
-module top;
+import complexpkg::*;
 
-	import complexpkg::*;
-	
-	complex A,B,Result;
+module top;	
+	complex A,B;
 	shortreal R,I;
 	
-	task addmul();
+	task automatic addmul();
+		complex Result;
 		Result = AddComplex(A,B);
 		$display("Result: Addition of complex numbers");
 		PrintComplex(Result);
 		
 		ComplexToComponents(Result,R,I);
-		$display("Complex to components");
+		$display("Result of addition:components of complex number");
 		$display("r: %g, i: %g",R,I);
-		
-		
+			
 		Result = MultComplex(A,B);
 		$display("Result: Multiplication of complex numbers");
 		PrintComplex(Result);
 		
 		ComplexToComponents(Result,R,I);
-		$display("Complex to components");
-		$display("r: %g, i: %g",R,I);
-		
+		$display("Result of Multiplication:components of complex numbers");
+		$display("r: %g, i: %g",R,I);	
+	endtask
+
+	task CreateFPComplex(input shortreal R1,I1,R2,I2);
+		A = CreateComplex(R1,I1);
+		$display("Create complex number A");
+		PrintComplex(A);
+		#10;
+
+		B = CreateComplex(R2,I2);
+		$display("Create complex number B");
+
+		PrintComplex(B);
+		#10;
+
+		addmul();
+		#50;
 	endtask
 	
 	initial 
 	begin
-		R = 32'b01000001101000001001001001000110;  I = 32'b01000001101000001001001001000110;
-		A = CreateComplex(R,I);
-		$display("Create complex number A");
-		PrintComplex(A);
-		#10
-		
-		R = 32'b01000001101000001001001001000110;  I = 32'b01000001101000001001001001000110;
-		B = CreateComplex(R,I);
-		$display("Create complex number B");
-		PrintComplex(B);
-		
-		addmul();
-		#100
+		CreateFPComplex (2567,4578,2245,4627);
+		CreateFPComplex (3768,4578,2891,5614);
+		CreateFPComplex (2237,4178,2275,4127); 
+		CreateFPComplex (2137,4148,2175,4157);
+		CreateFPComplex (5624,8976,4156,4567);
 
-		R = 32'b01000011101000001001001001010110;  I = 32'b01100001101000001001101001000110;
-		A = CreateComplex(R,I);
-		$display("Create complex number A");
-		PrintComplex(A);
-		#10
-		
-		R = 32'b11001001101000001001001001010110;  I = 32'b01000101101010001001001001000110;
-		B = CreateComplex(R,I);
-		$display("Create complex number B");
-		PrintComplex(B);
-		
-		addmul();
-		#100
 		$finish;
-	end
-	
+	end	
 endmodule

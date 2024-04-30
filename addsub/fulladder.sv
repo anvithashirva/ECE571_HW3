@@ -14,28 +14,3 @@ module FullAdder(A, B, CI, S, CO);
 	or or1(CO,w[1],w[2],w[3]);
 	
 endmodule
-
-/*
-module FullAdderNbit(A, B, CI, S, CO);
-	parameter N = 8;
-	input [N-1:0] A, B;
-	input CI;
-	output [N-1:0] S;
-	output CO;
-	
-	logic [N:0] c;
-	
-	assign c[0] = CI;
-	assign CO = c[N];
-	
-	//xor xor1(ccv,c[N],c[N-1]);
-	
-	genvar i;
-	generate
-		for (i = 0; i < N; i++)
-		begin: FA
-			FullAdder FADUT (A[i], B[i], c[i], S[i], c[i+1]);
-		end
-	endgenerate
-endmodule
-*/

@@ -24,6 +24,11 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.3_1 2021.08, Aug 15 2021
 13
 !s112 1.1
@@ -33,10 +38,10 @@ R0
 cModel Technology
 Z1 d/u/anvithas/ECE571-2024/ECE571_HW3/addsub
 T_opt
-!s110 1714348627
-VEzMWBdVzgKYjoffHIGkKB1
+!s110 1714452557
+V4okzLkOc37HmiY6nz?bX32
 Z2 04 3 4 work top fast 0
-=1-5254006cf05e-662ee252-df02f-5817
+=1-525400b63b2a-6630784c-e8425-2d7f
 Z3 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work
 Z4 tCvgOpt 0
@@ -55,23 +60,23 @@ R5
 R1
 vAddSub8Bit
 Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z7 !s110 1714348616
+Z7 !s110 1714452549
 !i10b 1
-!s100 ]RRAW9SY=Boi[D4WkAR0l0
-I7D3]dg7UMC?AmMh11IYE90
+!s100 SGMo2cYAYAfSJAAIUB59M0
+Id;ET8@^mC;fT3n1KWBUCi2
 S1
 R1
-w1714348519
+w1714452516
 8addsub.sv
 Faddsub.sv
-!i122 55
-L0 1 61
+!i122 61
+L0 1 43
 Z8 VDg1SIo80bB@j0V0VzS_@n1
 Z9 OL;L;2021.3_1;73
 r1
 !s85 0
 31
-Z10 !s108 1714348615.000000
+Z10 !s108 1714452548.000000
 Z11 !s107 addsubtb.sv|addsub.sv|fulladder.sv|
 Z12 !s90 -source|-lint|fulladder.sv|addsub.sv|addsubtb.sv|
 !i113 0
@@ -82,15 +87,15 @@ vAddSub8BitGolden
 R6
 R7
 !i10b 1
-!s100 ko]=4XiiiE_ifW<aC4f]V3
-In<F78:loT2AJ7idYVf^F=0
+!s100 <`<DgSIhUabnj7RRN<eIE1
+I]m0VgMnzb2oJ3]GH4YIPi3
 S1
 R1
-Z14 w1714334866
+Z14 w1714452496
 Z15 8addsubtb.sv
 Z16 Faddsubtb.sv
-!i122 55
-L0 82 49
+!i122 61
+L0 59 52
 R8
 R9
 r1
@@ -111,10 +116,10 @@ R7
 IReeS;Aa>JX_^cmT@ZW8S=2
 S1
 R1
-w1714327464
+w1714428796
 8fulladder.sv
 Ffulladder.sv
-!i122 55
+!i122 61
 L0 1 16
 R8
 R9
@@ -132,15 +137,15 @@ vtop
 R6
 R7
 !i10b 1
-!s100 ?j>_6_FI3NS;:OV]PAhYD0
-I2[GK33K4kL[X[F:o9o1h[2
+!s100 LS5`Hah1CmVBJQDT5I;@L3
+IPdO:ll]eQn@dL1MN1amCi2
 S1
 R1
 R14
 R15
 R16
-!i122 55
-L0 1 80
+!i122 61
+L0 1 57
 R8
 R9
 r1
